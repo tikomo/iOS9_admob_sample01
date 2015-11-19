@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ACBFE729A3DFF826A76A9AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 018765F3DEA9939FD68C05B4 /* libPods.a */; };
+		E1AF63EF1BFD8F6B00B4AB11 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1AF63EE1BFD8F6B00B4AB11 /* readme.txt */; };
 		E1C9C0C11BFD630A003F2AC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C9C0C01BFD630A003F2AC7 /* main.m */; };
 		E1C9C0C41BFD630A003F2AC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C9C0C31BFD630A003F2AC7 /* AppDelegate.m */; };
 		E1C9C0C71BFD630A003F2AC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C9C0C61BFD630A003F2AC7 /* ViewController.m */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		018765F3DEA9939FD68C05B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBE1BA9D6E3A033E2FF7828 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E1AF63EE1BFD8F6B00B4AB11 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		E1C9C0BC1BFD630A003F2AC7 /* admobTest02_ios9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = admobTest02_ios9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C9C0C01BFD630A003F2AC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1C9C0C21BFD630A003F2AC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		E1C9C0E31BFD630A003F2AC7 /* admobTest02_ios9UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = admobTest02_ios9UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C9C0E71BFD630A003F2AC7 /* admobTest02_ios9UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = admobTest02_ios9UITests.m; sourceTree = "<group>"; };
 		E1C9C0E91BFD630A003F2AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F283CA9F6D8AC7304DDB7DF9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACBFE729A3DFF826A76A9AD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +87,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B84CD35C15A88DC979766369 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCBE1BA9D6E3A033E2FF7828 /* Pods.debug.xcconfig */,
+				F283CA9F6D8AC7304DDB7DF9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1A864019CA08640AD0CB97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018765F3DEA9939FD68C05B4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1C9C0B31BFD630A003F2AC7 = {
 			isa = PBXGroup;
 			children = (
+				E1AF63EE1BFD8F6B00B4AB11 /* readme.txt */,
 				E1C9C0BE1BFD630A003F2AC7 /* admobTest02_ios9 */,
 				E1C9C0DB1BFD630A003F2AC7 /* admobTest02_ios9Tests */,
 				E1C9C0E61BFD630A003F2AC7 /* admobTest02_ios9UITests */,
 				E1C9C0BD1BFD630A003F2AC7 /* Products */,
+				B84CD35C15A88DC979766369 /* Pods */,
+				D1A864019CA08640AD0CB97B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C9C0EC1BFD630A003F2AC7 /* Build configuration list for PBXNativeTarget "admobTest02_ios9" */;
 			buildPhases = (
+				5A505DBC17D7FD6D5E4B24D6 /* Check Pods Manifest.lock */,
 				E1C9C0B81BFD630A003F2AC7 /* Sources */,
 				E1C9C0B91BFD630A003F2AC7 /* Frameworks */,
 				E1C9C0BA1BFD630A003F2AC7 /* Resources */,
+				58C0F77FE9E5245682A5F3F0 /* Embed Pods Frameworks */,
+				89B604AF9CD35F42296A6C07 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +278,7 @@
 			files = (
 				E1C9C0D21BFD630A003F2AC7 /* LaunchScreen.storyboard in Resources */,
 				E1C9C0CF1BFD630A003F2AC7 /* Assets.xcassets in Resources */,
+				E1AF63EF1BFD8F6B00B4AB11 /* readme.txt in Resources */,
 				E1C9C0CA1BFD630A003F2AC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +298,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58C0F77FE9E5245682A5F3F0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A505DBC17D7FD6D5E4B24D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89B604AF9CD35F42296A6C07 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1C9C0B81BFD630A003F2AC7 /* Sources */ = {
@@ -413,8 +492,10 @@
 		};
 		E1C9C0ED1BFD630A003F2AC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCBE1BA9D6E3A033E2FF7828 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = admobTest02_ios9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.tikomo.admobTest02-ios9";
@@ -424,8 +505,10 @@
 		};
 		E1C9C0EE1BFD630A003F2AC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F283CA9F6D8AC7304DDB7DF9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = admobTest02_ios9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.tikomo.admobTest02-ios9";
@@ -500,6 +583,7 @@
 				E1C9C0EE1BFD630A003F2AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1C9C0EF1BFD630A003F2AC7 /* Build configuration list for PBXNativeTarget "admobTest02_ios9Tests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +592,7 @@
 				E1C9C0F11BFD630A003F2AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1C9C0F21BFD630A003F2AC7 /* Build configuration list for PBXNativeTarget "admobTest02_ios9UITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +601,7 @@
 				E1C9C0F41BFD630A003F2AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
